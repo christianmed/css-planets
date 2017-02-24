@@ -24,6 +24,10 @@ $moon:#FFD555;
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -45,8 +49,54 @@ body {
 }
 
 // ========================================================
+// ==========    universe
+// ========================================================
+.universe {
+  max-width: 800px;
+  height: 600px;
+  // background: red;
+  margin: 5em auto;
+}
+
+
+// ========================================================
 // ==========    STARS
 // ========================================================
+.stars,
+.stars::before,
+.stars::after {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: $white;
+}
+
+.stars {
+
+  &::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    top: 270px;
+    box-shadow: 
+      15px -140px 0 $white,
+      250px 90px 0 $white,
+      300px -110px 0 $white,
+      300px -110px 0 $white,
+      520px 190px 0 $white,
+      640px 60px 0 $white,
+      650px -40px 0 $white,
+      750px 150px 0 $white,
+      795px -250px 0 $white;
+  }
+
+  &::after {
+    content: "";
+    width: 13px;
+    height: 13px;
+  }
+}
 
 // ========================================================
 // ==========    MOON
@@ -59,3 +109,13 @@ body {
 // ========================================================
 // ==========    PLANETS
 // ========================================================
+.planet-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: $white;
+}
