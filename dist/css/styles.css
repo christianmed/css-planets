@@ -26,6 +26,7 @@ body {
 .universe {
   max-width: 800px;
   height: 600px;
+  background: red;
   margin: 5em auto; }
 
 .stars,
@@ -37,17 +38,18 @@ body {
   border-radius: 50%;
   background: #F9F8F3; }
 
-.stars::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  top: 270px;
-  box-shadow: 15px -140px 0 #F9F8F3, 250px 90px 0 #F9F8F3, 300px -110px 0 #F9F8F3, 300px -110px 0 #F9F8F3, 520px 190px 0 #F9F8F3, 640px 60px 0 #F9F8F3, 650px -40px 0 #F9F8F3, 750px 150px 0 #F9F8F3, 795px -250px 0 #F9F8F3; }
-
-.stars::after {
-  content: "";
-  width: 13px;
-  height: 13px; }
+.stars {
+  box-shadow: 90px 320px 0 #F9F8F3, 110px 500px 0 #F9F8F3, 140px 50px 0 #F9F8F3, 380px 430px 0 #F9F8F3, 470px 170px 0 #F9F8F3, 495px 400px 0 #F9F8F3, 550px 300px 0 #F9F8F3, 620px 590px 0 #F9F8F3, 760px 100px 0 #F9F8F3; }
+  .stars::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    top: 270px;
+    box-shadow: 15px -140px 0 #F9F8F3, 250px 90px 0 #F9F8F3, 300px -110px 0 #F9F8F3, 300px -110px 0 #F9F8F3, 530px 200px 0 #F9F8F3, 640px 60px 0 #F9F8F3, 650px -40px 0 #F9F8F3, 750px 150px 0 #F9F8F3, 795px -250px 0 #F9F8F3; }
+  .stars::after {
+    content: "";
+    width: 13px;
+    height: 13px; }
 
 .planet-1 {
   position: absolute;

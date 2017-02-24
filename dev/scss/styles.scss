@@ -54,7 +54,7 @@ body {
 .universe {
   max-width: 800px;
   height: 600px;
-  // background: red;
+  background: red;
   margin: 5em auto;
 }
 
@@ -73,6 +73,16 @@ body {
 }
 
 .stars {
+  box-shadow:
+    90px 320px 0 $white,
+    110px 500px 0 $white,
+    140px 50px 0 $white,
+    380px 430px 0 $white,
+    470px 170px 0 $white,
+    495px 400px 0 $white,
+    550px 300px 0 $white,
+    620px 590px 0 $white,
+    760px 100px 0 $white;
 
   &::before {
     content: "";
@@ -84,7 +94,7 @@ body {
       250px 90px 0 $white,
       300px -110px 0 $white,
       300px -110px 0 $white,
-      520px 190px 0 $white,
+      530px 200px 0 $white,
       640px 60px 0 $white,
       650px -40px 0 $white,
       750px 150px 0 $white,
