@@ -66,32 +66,37 @@ body {
           transform: translate(-50%, -50%);
   width: 200px;
   height: 200px;
-  background: #F9F8F3; }
+  background: #F9F8F3;
+  box-shadow: inset 15px -20px 0 0 #CCC2CA; }
 
 .planet-2 {
   top: 300px;
   left: 50px;
   width: 140px;
   height: 140px;
-  background: #C0F378; }
+  background: #C0F378;
+  box-shadow: inset 12px -5px 0 10px #8FC73F; }
 
 .planet-3 {
   top: 570px;
   left: 150px;
   width: 50px;
   height: 50px;
-  background: #FC7C62; }
+  background: #FC7C62;
+  box-shadow: inset 7px 0 0 1px #D65E46; }
 
 .planet-4 {
   top: 280px;
   left: 550px;
   width: 80px;
   height: 80px;
-  background: #FC7C62; }
+  background: #FC7C62;
+  box-shadow: inset 5px -5px 0 5px #D65E46; }
 
 .planet-5 {
   top: 500px;
   left: 600px;
   width: 100px;
   height: 100px;
-  background: #ECE172; }
+  background: #ECE172;
+  box-shadow: inset 5px -5px 0 5px #C3B956; }

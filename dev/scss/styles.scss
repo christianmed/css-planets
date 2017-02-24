@@ -2,11 +2,11 @@
 $bg:#240D2C;
 $font: #553B5E;
 $green:#C0F378;
-$darkgreen: darken($green,25);
+$darkgreen: #8FC73F;
 $pink:#FC7C62;
-$darkpink: darken($pink,25);
+$darkpink: #D65E46;
 $yellow:#ECE172;
-$darkyellow: darken($yellow,25);
+$darkyellow: #C3B956;
 $white:#F9F8F3;
 $darkwhite: #CCC2CA;
 $moon:#FFD555;
@@ -140,6 +140,8 @@ body {
   width: 200px;
   height: 200px;
   background: $white;
+  box-shadow:
+    inset 15px -20px 0 0 $darkwhite;
 }
 
 .planet-2 {
@@ -148,6 +150,8 @@ body {
   width: 140px;
   height: 140px;
   background: $green;
+  box-shadow:
+    inset 12px -5px 0 10px $darkgreen;
 }
 
 .planet-3 {
@@ -156,6 +160,8 @@ body {
   width: 50px;
   height: 50px;
   background: $pink;
+  box-shadow:
+    inset 7px 0 0 1px $darkpink;
 }
 
 .planet-4 {
@@ -164,6 +170,8 @@ body {
   width: 80px;
   height: 80px;
   background: $pink;
+  box-shadow:
+    inset 5px -5px 0 5px $darkpink;
 }
 
 .planet-5 {
@@ -172,4 +180,6 @@ body {
   width: 100px;
   height: 100px;
   background: $yellow;
+  box-shadow:
+    inset 5px -5px 0 5px $darkyellow;
 }
