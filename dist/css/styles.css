@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #240D2C;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.header {
+  height: 7.5vh;
+  line-height: 7.5vh;
+  background: #CCC2CA; }
+
+.title {
+  color: #553B5E;
+  text-align: center;
+  font-weight: 400; }
