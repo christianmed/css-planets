@@ -54,6 +54,16 @@ body {
     left: 5px;
     box-shadow: 230px -160px 0 #F9F8F3, 300px 150px 0 #F9F8F3, 340px -320px 0 #F9F8F3, 590px -360px 0 #F9F8F3, 660px 80px 0 #F9F8F3, 700px -220px 0 #F9F8F3; }
 
+.moon {
+  position: absolute;
+  z-index: -100;
+  left: 60%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #240D2C;
+  box-shadow: inset 15px -15px 0 5px #FFD555; }
+
 [class^="planet-"] {
   position: absolute;
   border-radius: 50%; }
