@@ -131,6 +131,13 @@ body {
 [class^="planet-"] {
   position: absolute;
   border-radius: 50%;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
 }
 
 .planet-1 {
@@ -142,44 +149,152 @@ body {
   background: $white;
   box-shadow:
     inset 15px -20px 0 0 $darkwhite;
+  
+  &::before {
+    top: 60%;
+    left: 25%;
+    width: 40px;
+    height: 40px;
+    background: darken($darkwhite,25);
+    box-shadow: 
+      inset -7px 7px 15px 0 rgba(0,0,0,.40);
+  }
+  &::after {
+    top: 15%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    background: darken($darkwhite,25);
+    box-shadow: 
+      inset -7px 7px 15px 0 rgba(0,0,0,.40);
+  }
+
+  .crater {
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: darken($darkwhite,25);
+    box-shadow: 
+      inset -5px 5px 8px 0 rgba(0,0,0,.3);
+
+  }
 }
 
 .planet-2 {
   top: 300px;
-  left: 50px;
+  left: 300px;
   width: 140px;
   height: 140px;
   background: $green;
   box-shadow:
     inset 12px -5px 0 10px $darkgreen;
+  
+  &::before {
+    top: 50%;
+    left: 25%;
+    width: 25px;
+    height: 25px;
+    background: $darkgreen;
+    box-shadow: 
+      inset -5px 5px 10px 0 rgba(0,0,0,.25);
+  }
+  &::after {
+    top: 25%;
+    left: 55%;
+    width: 50px;
+    height: 50px;
+    background: $darkgreen;
+    box-shadow: 
+      inset -7px 7px 10px 0 rgba(0,0,0,.25);
+  }
 }
 
 .planet-3 {
-  top: 570px;
-  left: 150px;
+  top: 550px;
+  left: 380px;
   width: 50px;
   height: 50px;
   background: $pink;
   box-shadow:
     inset 7px 0 0 1px $darkpink;
+  
+  &::before {
+    top: 30%;
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    background: $darkpink;
+    box-shadow:
+      inset -2px 2px 5px 0 rgba(0,0,0,.25);
+  }
+  &::after {
+    top: 40%;
+    left: 55%;
+    width: 18px;
+    height: 18px;
+    background: $darkpink;
+    box-shadow:
+      inset -3px 3px 5px 0 rgba(0,0,0,.25);
+  }
 }
 
 .planet-4 {
-  top: 280px;
-  left: 550px;
+  top: 320px;
+  left: 770px;
   width: 80px;
   height: 80px;
   background: $pink;
   box-shadow:
     inset 5px -5px 0 5px $darkpink;
+  
+  &::before {
+    top: 30%;
+    left: 25%;
+    width: 15px;
+    height: 15px;
+    background: $darkpink;
+    box-shadow:
+      inset -3px 3px 5px 0 rgba(0,0,0,.25);
+  }
+  &::after {
+    top: 40%;
+    left: 55%;
+    width: 25px;
+    height: 25px;
+    background: $darkpink;
+    box-shadow:
+      inset -4px 4px 8px 0 rgba(0,0,0,.25);
+  }
 }
 
 .planet-5 {
-  top: 500px;
-  left: 600px;
+  top: 510px;
+  left: 800px;
   width: 100px;
   height: 100px;
   background: $yellow;
   box-shadow:
     inset 5px -5px 0 5px $darkyellow;
+  
+  &::before {
+    top: 50%;
+    left: 25%;
+    width: 18px;
+    height: 18px;
+    background: $darkyellow;
+    box-shadow: 
+      inset -5px 5px 10px 0 rgba(0,0,0,.25);
+  }
+  &::after {
+    top: 25%;
+    left: 55%;
+    width: 35px;
+    height: 35px;
+    background: $darkyellow;
+    box-shadow: 
+      inset -7px 7px 10px 0 rgba(0,0,0,.25);
+  }
 }

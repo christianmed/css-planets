@@ -57,6 +57,10 @@ body {
 [class^="planet-"] {
   position: absolute;
   border-radius: 50%; }
+  [class^="planet-"]::before, [class^="planet-"]::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%; }
 
 .planet-1 {
   top: 50%;
@@ -68,35 +72,114 @@ body {
   height: 200px;
   background: #F9F8F3;
   box-shadow: inset 15px -20px 0 0 #CCC2CA; }
+  .planet-1::before {
+    top: 60%;
+    left: 25%;
+    width: 40px;
+    height: 40px;
+    background: #927d8e;
+    box-shadow: inset -7px 7px 15px 0 rgba(0, 0, 0, 0.4); }
+  .planet-1::after {
+    top: 15%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    background: #927d8e;
+    box-shadow: inset -7px 7px 15px 0 rgba(0, 0, 0, 0.4); }
+  .planet-1 .crater {
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #927d8e;
+    box-shadow: inset -5px 5px 8px 0 rgba(0, 0, 0, 0.3); }
 
 .planet-2 {
   top: 300px;
-  left: 50px;
+  left: 300px;
   width: 140px;
   height: 140px;
   background: #C0F378;
   box-shadow: inset 12px -5px 0 10px #8FC73F; }
+  .planet-2::before {
+    top: 50%;
+    left: 25%;
+    width: 25px;
+    height: 25px;
+    background: #8FC73F;
+    box-shadow: inset -5px 5px 10px 0 rgba(0, 0, 0, 0.25); }
+  .planet-2::after {
+    top: 25%;
+    left: 55%;
+    width: 50px;
+    height: 50px;
+    background: #8FC73F;
+    box-shadow: inset -7px 7px 10px 0 rgba(0, 0, 0, 0.25); }
 
 .planet-3 {
-  top: 570px;
-  left: 150px;
+  top: 550px;
+  left: 380px;
   width: 50px;
   height: 50px;
   background: #FC7C62;
   box-shadow: inset 7px 0 0 1px #D65E46; }
+  .planet-3::before {
+    top: 30%;
+    left: 25%;
+    width: 10px;
+    height: 10px;
+    background: #D65E46;
+    box-shadow: inset -2px 2px 5px 0 rgba(0, 0, 0, 0.25); }
+  .planet-3::after {
+    top: 40%;
+    left: 55%;
+    width: 18px;
+    height: 18px;
+    background: #D65E46;
+    box-shadow: inset -3px 3px 5px 0 rgba(0, 0, 0, 0.25); }
 
 .planet-4 {
-  top: 280px;
-  left: 550px;
+  top: 320px;
+  left: 770px;
   width: 80px;
   height: 80px;
   background: #FC7C62;
   box-shadow: inset 5px -5px 0 5px #D65E46; }
+  .planet-4::before {
+    top: 30%;
+    left: 25%;
+    width: 15px;
+    height: 15px;
+    background: #D65E46;
+    box-shadow: inset -3px 3px 5px 0 rgba(0, 0, 0, 0.25); }
+  .planet-4::after {
+    top: 40%;
+    left: 55%;
+    width: 25px;
+    height: 25px;
+    background: #D65E46;
+    box-shadow: inset -4px 4px 8px 0 rgba(0, 0, 0, 0.25); }
 
 .planet-5 {
-  top: 500px;
-  left: 600px;
+  top: 510px;
+  left: 800px;
   width: 100px;
   height: 100px;
   background: #ECE172;
   box-shadow: inset 5px -5px 0 5px #C3B956; }
+  .planet-5::before {
+    top: 50%;
+    left: 25%;
+    width: 18px;
+    height: 18px;
+    background: #C3B956;
+    box-shadow: inset -5px 5px 10px 0 rgba(0, 0, 0, 0.25); }
+  .planet-5::after {
+    top: 25%;
+    left: 55%;
+    width: 35px;
+    height: 35px;
+    background: #C3B956;
+    box-shadow: inset -7px 7px 10px 0 rgba(0, 0, 0, 0.25); }
