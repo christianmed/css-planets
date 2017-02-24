@@ -54,7 +54,6 @@ body {
 .universe {
   max-width: 800px;
   height: 600px;
-  background: red;
   margin: 5em auto;
 }
 
@@ -129,13 +128,48 @@ body {
 // ========================================================
 // ==========    PLANETS
 // ========================================================
-.planet-1 {
+[class^="planet-"] {
   position: absolute;
+  border-radius: 50%;
+}
+
+.planet-1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   background: $white;
+}
+
+.planet-2 {
+  top: 300px;
+  left: 50px;
+  width: 140px;
+  height: 140px;
+  background: $green;
+}
+
+.planet-3 {
+  top: 570px;
+  left: 150px;
+  width: 50px;
+  height: 50px;
+  background: $pink;
+}
+
+.planet-4 {
+  top: 280px;
+  left: 550px;
+  width: 80px;
+  height: 80px;
+  background: $pink;
+}
+
+.planet-5 {
+  top: 500px;
+  left: 600px;
+  width: 100px;
+  height: 100px;
+  background: $yellow;
 }

@@ -26,7 +26,6 @@ body {
 .universe {
   max-width: 800px;
   height: 600px;
-  background: red;
   margin: 5em auto; }
 
 .stars,
@@ -55,8 +54,11 @@ body {
     left: 5px;
     box-shadow: 230px -160px 0 #F9F8F3, 300px 150px 0 #F9F8F3, 340px -320px 0 #F9F8F3, 590px -360px 0 #F9F8F3, 660px 80px 0 #F9F8F3, 700px -220px 0 #F9F8F3; }
 
-.planet-1 {
+[class^="planet-"] {
   position: absolute;
+  border-radius: 50%; }
+
+.planet-1 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -64,5 +66,32 @@ body {
           transform: translate(-50%, -50%);
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   background: #F9F8F3; }
+
+.planet-2 {
+  top: 300px;
+  left: 50px;
+  width: 140px;
+  height: 140px;
+  background: #C0F378; }
+
+.planet-3 {
+  top: 570px;
+  left: 150px;
+  width: 50px;
+  height: 50px;
+  background: #FC7C62; }
+
+.planet-4 {
+  top: 280px;
+  left: 550px;
+  width: 80px;
+  height: 80px;
+  background: #FC7C62; }
+
+.planet-5 {
+  top: 500px;
+  left: 600px;
+  width: 100px;
+  height: 100px;
+  background: #ECE172; }
