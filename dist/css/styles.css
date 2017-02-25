@@ -26,6 +26,8 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
 .header {
+  position: relative;
+  z-index: 300;
   width: 100%;
   height: 7.5vh;
   line-height: 7.5vh;
@@ -43,9 +45,9 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 100%;
   height: 92.5vh;
   background: #240D2C; }
