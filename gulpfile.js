@@ -1,4 +1,6 @@
-var gulp = require('gulp'),
+'use strict';
+
+const gulp = require('gulp'),
   pug = require('gulp-pug'),
   sass = require('gulp-sass'),
   pref = require('gulp-autoprefixer'),
@@ -9,19 +11,19 @@ var gulp = require('gulp'),
 gulp.task('pug', function() {
   return gulp.src('./dev/pug/*.pug')
     .pipe(plum())
-    .pipe(pug({pretty: true}))
+    .pipe(pug({ pretty: true }))
     .pipe(plum.stop())
-    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('styles', function() {
   return gulp.src('./dev/scss/*.scss')
     .pipe(plum())
-    .pipe(sass({outputStyle: 'nested'}))
-    .pipe(pref({browsers: 'last 5 versions', cascade: true}))
+    .pipe(sass({ outputStyle: 'nested' }))
+    .pipe(pref({ browsers: 'last 5 versions', cascade: true }))
     .pipe(plum.stop())
     .pipe(gulp.dest('./dist/css/'))
-    .pipe(reload({stream: true}))
+    .pipe(reload({ stream: true }));
 });
 
 gulp.task('default', ['pug', 'styles'], function() {
